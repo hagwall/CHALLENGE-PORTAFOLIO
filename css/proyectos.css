@@ -1,0 +1,132 @@
+
+.experiencia_profesional {
+    background-color: var(--color-primary);
+    padding: 5px;
+}
+.experiencia_profesional h2{
+    text-align: center;
+    color: var(--color-titulo);
+    font-size: 30px;
+}
+.seccion_proyectos{
+    margin-bottom: 5px;
+}
+
+
+.titulo_categoria{
+    font-size: 1.5em;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.proyectos_contenidos{
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+}
+.proyecto_contenido{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 5px;
+}
+
+.proyecto_contenido:hover{
+    border: 3px solid var(--color-titulo);
+}
+
+.proyecto_demo {
+    width: 65%;
+    height: 280px;
+    overflow: hidden;
+    border: 2px solid var(--color-head);
+}
+.proyecto_demo iframe{
+    width: 1200px;
+    height: 1100px;
+    transform: scale(0.40);
+    transform-origin: 0 0;
+    border: none;
+} 
+/* seccion experiencia TI */
+.proyectos_contenidos_img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.proyecto_contenido_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--color-text);
+}
+
+.proyecto_imagen{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+}
+
+.proyecto_info_img{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.proyecto_imagen img {
+   width: 50%;
+   border-radius: 5px;
+}
+
+.proyecto_info{
+    padding: 10px;
+    width: 30%;
+}
+.proyecto_info h4 {
+    font-size: 1.5em;
+    color: #333;
+    
+}
+
+.proyecto_info p {
+    color: #666;
+}
+
+.btn-repositorio{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-titulo);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-repositorio:hover{
+    background-color: #555;
+}
+
+
+/* media query */
+@media (max-width: 768px) {
+    .proyectos_contenidos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 30px;
+        justify-content: space-around;
+    }
+    .proyecto_demo {
+        width: 80%;
+        margin: 20px 0;
+    }
+}

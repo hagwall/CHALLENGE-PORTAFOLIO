@@ -1,0 +1,19 @@
+.seccion_presentacion{
+    
+    background-color: var(--color-primary);
+    padding: 5px;
+    
+}
+.descripcion{
+    align-self: flex-start;
+    width: 50%;
+    color: var(--color-text);
+    font-size: 20px;
+}
+
+.descripcion h2{
+    color: var(--color-titulo);
+    border-bottom: 2px solid var(--color-titulo);
+    display: inline;
+    padding-bottom: 5px;
+}
